@@ -1,0 +1,6 @@
+The lock in needs phase marker from the 6221's trigger link in order to know what phase to stay at. It also need to know the frequency of the sin wave of the output.
+To the set the phase marker, got to CONFIG->WAVE->PH-MKR->STATE(set to on)
+Then to make sure the right line sends the phase marker, CONFIG->WAVE->PH-MKR->LINE (choose line number. #3 by default)
+
+Sometimes the interlock will block the output attempt. The interlock is at the rear of the 6221, there is a switch that turns on/off the circuit between output electrodes. The circuit must be closed in order to output current.
+If interlock is open, there is error msg 402: "Blocked by the interlock"
